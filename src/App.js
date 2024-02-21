@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import TariffItem from './components/TariffItem.jsx';
+import data from './data.json';
 
 function App() {
+  const cardItem = data.map(item =>
+    <TariffItem
+      name={item.name}
+      price={item.price}
+      megabit={item.megabit}
+      trafficvolume={item.trafficvolume}
+    />
+  )
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='main'>{cardItem}</main>
   );
 }
 

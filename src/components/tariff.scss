@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    gap: 2px;
+}
+
+.card {
+    text-align: center;
+
+    &__traffic {
+        background-color: rgb(186, 183, 183);
+        // background-color: lightblue;
+        // background-color: blue;
+    }
+}
