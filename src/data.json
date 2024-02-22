@@ -5,27 +5,34 @@
         "price": 300,
         "megabit": 10,
         "trafficvolume": "Объём включённого трафика не ограничен",
-        "headertheme": "lightblue"
+        "header": "blue",
+        "info": "lightblue"
     },
     {
         "id": 2,
         "name": "Безлимитный 450",
         "price": 450,
         "megabit": 50,
-        "trafficvolume": "Объём включённого трафика не ограничен"
+        "trafficvolume": "Объём включённого трафика не ограничен",
+        "header": "green",
+        "info": "lightgreen"
     },
     {
         "id": 3,
         "name": "Безлимитный 550",
         "price": 550,
         "megabit": 100,
-        "trafficvolume": "Объём включённого трафика не ограничен"
+        "trafficvolume": "Объём включённого трафика не ограничен",
+        "header": "red",
+        "info": "lightred"
     },
     {
         "id": 4,
         "name": "Безлимитный 1000",
         "price": 1000,
         "megabit": 200,
-        "trafficvolume": "Объём включённого трафика не ограничен"
+        "trafficvolume": "Объём включённого трафика не ограничен",
+        "header": "grey",
+        "info": "lightgrey"
     }
 ]
