@@ -1,13 +1,19 @@
 .main {
     display: flex;
-    gap: 2px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    gap: 10px;
 }
 
 .card {
     text-align: center;
+    cursor: pointer;
+    width: 45em;
 
     &__header {
         border: 1px solid rgb(255, 255, 255);
+        font-size: 10px;
     }
 
     &__price {
@@ -21,6 +27,15 @@
     }
 }
 
+.card:hover {
+    transform-origin: top;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    transition: margin-left 130ms;
+    transition: margin-top 130ms;
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.4);
+}
+
 .currency {
     font-size: 20px;
     margin-right: 150px;
@@ -32,34 +47,43 @@
     margin: 0;
 }
 
-.blue {
+.blue .card__header {
     background-color: rgb(132, 132, 240);
 }
 
-.lightblue {
+.blue {
     background-color: lightblue;
 }
 
-.red {
+.red .card__header {
     background-color: rgb(142, 73, 73);
 }
 
-.lightred {
+.red {
     background-color: coral;
 }
 
-.green {
+.green .card__header {
     background-color: rgb(54, 101, 54);
 }
 
-.lightgreen {
+.green {
     background-color: lightgreen;
 }
 
-.grey {
+.grey .card__header {
     background-color: grey;
 }
 
-.lightgrey {
+.grey {
     background-color: lightgrey;
+}
+
+.selected {
+    transform-origin: top;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    transition: margin-left 130ms;
+    transition: margin-top 130ms;
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.4);
 }
